@@ -11,10 +11,10 @@
          <ul>
 
             <li><a href="index.php">Home</a></li>
-            <li><a href=AllGames.php">All Games</a></li>
-            <li><a href=Multiplayer.php">Multiplayer</a></li>
-            <li><a href=SinglePlayer.php">Single Player</a></li>
-            <li><a href=Random.php">Random</a></li>
+            <li><a href="AllGames.php">All Games</a></li>
+            <li><a href="Multiplayer.php">Multiplayer</a></li>
+            <li><a href="SinglePlayer.php">Single Player</a></li>
+            <li><a href="Random.php">Random</a></li>
 
 
 
