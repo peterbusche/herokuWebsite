@@ -16,8 +16,8 @@
          <ul>
 
             <li><a href="index.php"><button class="join-button">HOME</button></a></li>
-            <li><a href="AllGames.php">All Games</a></li>
-            <li><a href="Multiplayer.php">Multiplayer</a></li>
+            <li><a href="AllGames.php"><button class="subscribe-button">All Games</button></a></li>
+            <li><a href="Multiplayer.php"><button class="tweet-button">Multiplayer</button></li>
             <li><a href="SinglePlayer.php">Single Player</a></li>
             <li><a href="Random.php">Random</a></li>
 
