@@ -10,7 +10,7 @@
      <div id="nav">
          <ul>
 
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php"><button class="subscribe-button">HOME</button></a></li>
             <li><a href="AllGames.php">All Games</a></li>
             <li><a href="Multiplayer.php">Multiplayer</a></li>
             <li><a href="SinglePlayer.php">Single Player</a></li>
