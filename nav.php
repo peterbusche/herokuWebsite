@@ -2,11 +2,16 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="scales.css">
+    <link rel="stylesheet" href="styles/scales.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/text.css">
+
   </head>
   <body>
      <img src="https://static.wikia.nocookie.net/rimworld-bestiary/images/f/f3/Dinosauria_velociraptor_f_east.png"/>
      <h1>Peter's Playhouse</h1>
+     
+     
      <div id="nav">
          <ul>
 
