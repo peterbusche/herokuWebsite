@@ -2,4 +2,6 @@
 <div id="content">
  PetersPlayhouse
 </div>
+
+
 <?php include("footer.php"); ?>

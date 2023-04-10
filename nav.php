@@ -6,16 +6,15 @@
   </head>
   <body>
      <img src="https://static.wikia.nocookie.net/rimworld-bestiary/images/f/f3/Dinosauria_velociraptor_f_east.png"/>
-     <h1>Dinosaurs!!</h1>
+     <h1>Peter's Playhouse</h1>
      <div id="nav">
          <ul>
 
-            <li>Home</a></li>
-            <li>Comments</a></li>
-            <li>Favorites</a></li>
-            <li>About</a></li>
-            <li>Careers</a></li>
-            <li>Logout</a></li>
+            <li><a href="/herokuWebsite/index.php">Home</a></li>
+            <li><a href=/herokuWebsite/AllGames.php">All Games</a></li>
+            <li><a href=/herokuWebsite/Multiplayer.php">Multiplayer</a></li>
+            <li><a href=/herokuWebsite/SinglePlayer.php">Single Player</a></li>
+            <li><a href=/herokuWebsite/Random.php">Random</a></li>
 
 
 
@@ -32,3 +31,5 @@
            
          </ul>
       </div>
+
+      

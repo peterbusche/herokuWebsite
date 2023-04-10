@@ -78,3 +78,10 @@ table tbody tr.active-row {
   color: white;
   font-family: Helvetica;
 }
+
+#AllGames {
+  margin-top:5px;
+  font-family: Helvetica;
+  text-align:center;
+  font-size: 9px;
+}
