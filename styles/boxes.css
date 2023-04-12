@@ -8,3 +8,16 @@
     padding: 40px;
     margin: 10px;
 }
+
+.box-title {
+    width: 300px;
+}
+
+.first-box {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    border: 1px solid black;
+}
+
