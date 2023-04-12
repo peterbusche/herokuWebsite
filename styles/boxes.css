@@ -23,8 +23,9 @@
 
 
 .big_box {
-    width: 1000px; height: 1000px; border:1px black; margin: 0 auto;
-    background-color: yellow;
+    max-width: 1200px;  
+    border:1px black; 
+    margin-top: 100px;
 }
 .box{
     vertical-align: top;
@@ -56,3 +57,26 @@
 
 
 
+.quarter {
+    padding: 8px;
+}
+
+
+.w3-Center {
+
+}
+
+.w3-padding {
+    padding: 8px 16px;
+}
+
+.w3_main {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.w3-content {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}

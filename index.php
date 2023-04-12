@@ -36,29 +36,20 @@
 -->
 
 
-<div class="big_box">
-  <div class="column">
-    <div class="box">
-        poop
-    </div>
-      
-  </div>
-
-  <div class="column">
-    <div class="box">
-        poop2
-    </div>
-      
-  </div>
+<div class="big_box w3-main w3-content w3-padding">
+  poop
 </div>
 
 
 
+<!--
+<div class="">
+    <div class="quarter">
+    </div>
+  </div>  
 
 
-
-
-
+-->
 
 
 
