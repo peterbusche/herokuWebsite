@@ -68,18 +68,29 @@
 -->
 <div class="containerGPT">
 		<div class="columnGPT">
-			<div class="boxGPT">1</div>
-			<div class="boxGPT">2</div>
-			<div class="boxGPT">3</div>
-			<div class="boxGPT">4</div>
+			<div class="boxGPT">
+        <img src="/thumbnails/steak.jpg" alt="Steak">
+        <h3>1</h3>
+
+      </div>
+			<div class="boxGPT">
+        <img src="/thumbnails/steak.jpg" alt="Steak">
+        <h3>2</h3>
+      </div>
+			
 		</div>
 
 
 		<div class="columnGPT">
-			<div class="boxGPT">5</div>
-			<div class="boxGPT">6</div>
-			<div class="boxGPT">7</div>
-			<div class="boxGPT">8</div>
+			<div class="boxGPT">
+        <img src="/thumbnails/steak.jpg" alt="Steak">
+        <h3>3</h3>
+      </div>
+			<div class="boxGPT">
+        <img src="/thumbnails/steak.jpg" alt="Steak">
+        <h3>4</h3>
+      </div>
+			
 		</div>
 </div>
 
