@@ -75,7 +75,7 @@
 		</div>
 
 
-		<div class="column">
+		<div class="columnGPT">
 			<div class="boxGPT">5</div>
 			<div class="boxGPT">6</div>
 			<div class="boxGPT">7</div>
