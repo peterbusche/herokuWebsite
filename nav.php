@@ -22,6 +22,8 @@
             <li><a href="Random.php"><button class="join-button">RANDOM</button></a></li>     
          </ul>
       </div>
+   </body>
+</html>
 
 
 
