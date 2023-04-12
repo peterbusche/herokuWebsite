@@ -35,11 +35,11 @@
 </div>
 -->
 
-<div class="first_box">
-  <div class="outside_column">
-    poop
-  </div>
+
+<div class="outside_column">
+  poop
 </div>
+
 
 
 
