@@ -97,6 +97,7 @@
 .containerGPT {
 	display: flex;
 	justify-content: space-between;
+    background-color:cornflowerblue;
 }
 
 .columnGPT {
@@ -111,7 +112,7 @@
 	width: 80%;
 	height: auto;
 	margin-bottom: 20px;
-	background-color: #ccc;
+	background-color: aqua;
 }
 
 .blankGPT {
