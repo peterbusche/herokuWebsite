@@ -19,7 +19,7 @@
 
 
 <!--
-<div class="first-box">
+<div class="first-boxGPT">
       <img class="thumbnail" src="thumbnails/download.png">
 
       <p class="video-title">
@@ -38,8 +38,8 @@
 
 
 <!--
-<div class="big_box w3-main w3-content w3-padding">
-  <div class = "inner_box">
+<div class="big_boxGPT w3-main w3-content w3-padding">
+  <div class = "inner_boxGPT">
     <div class="quarter">
     <img src="/thumbnails/steak.jpg" alt="Steak">
       <h3>aslkdfjl</h3>
@@ -66,25 +66,19 @@
   </div>
 </div>
 -->
-<div class="big_box">
-  <div class=column2>
-    <div class="inner_box">
-      <h3>POOP</h3>
-    </div>
-    <div class="inner_box">
-      <h3>POOP2</h3>
-    </div>   
-  </div>
-
-  <div class=column2>
-  poop
-  </div>
-  <div class=column2>
-  poop
-  </div>
-  <div class=column2>
-  poop
-  </div>
+<div class="containerGPT">
+		<div class="columnGPT">
+			<div class="boxGPT"></div>
+			<div class="boxGPT"></div>
+			<div class="boxGPT"></div>
+			<div class="boxGPT"></div>
+		</div>
+		<div class="column">
+			<div class="boxGPT"></div>
+			<div class="boxGPT"></div>
+			<div class="boxGPT"></div>
+			<div class="boxGPT"></div>
+		</div>
 </div>
 
 
