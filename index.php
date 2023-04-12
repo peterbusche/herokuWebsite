@@ -38,7 +38,10 @@
 
 <div class="big_box">
   <div class="column">
-    poop
+    <div class="box">
+        poop
+    </div>
+      
   </div>
 </div>
 
