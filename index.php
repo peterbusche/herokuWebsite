@@ -69,19 +69,19 @@
 <div class="big_box">
   <div class="row">
     <div class="column2">
-        poop
+    <img src="/thumbnails/steak.jpg" alt="Steak">
     </div>
     
     <div class="column2">
-        pee
+    <img src="/thumbnails/steak.jpg" alt="Steak">
     </div>
 
     <div class="column2">
-        ppop2
+    <img src="/thumbnails/steak.jpg" alt="Steak">
     </div>
 
     <div class="column2">
-        pee2
+    <img src="/thumbnails/steak.jpg" alt="Steak">
     </div>
 
   </div>
