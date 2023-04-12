@@ -35,8 +35,8 @@
 </div>
 -->
 
-<div class="first-box">
-  <div class="outside_box">
+<div class="first_box">
+  <div class="outside_column">
     poop
   </div>
 </div>
