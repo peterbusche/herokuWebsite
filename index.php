@@ -18,9 +18,19 @@
 -->
 
 <div class="first-box">
-    <p class="box-title">
-        poop
-    </p>
+      <img class="thumbnail" src="thumbnails/download.png">
+
+      <p class="video-title">
+        Talking Tech and AI with Google CEO Sundar Pichai!
+      </p>
+      <p class="video-author">
+        Marques Brownlee
+      </p>
+      <p class="video-stats">
+        3.4M views &#183; 6 months ago
+      </p>
+    </div>
+
 </div>
 
 <?php include("footer.php"); ?>
