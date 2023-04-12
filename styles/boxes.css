@@ -23,7 +23,7 @@
 
 
 .big_box {
-    width: 250px; height: 1000px; border:1px black; margin: 0 auto;
+    width: 1000px; height: 1000px; border:1px black; margin: 0 auto;
     background-color: yellow;
 }
 .box{
