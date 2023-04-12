@@ -67,23 +67,17 @@
 </div>
 -->
 <div class="big_box">
-  <div class="row">
-    <div class="column2">
+  <div class=column2>
     <img src="/thumbnails/steak.jpg" alt="Steak">
-    </div>
-    
-    <div class="column2">
-    <img src="/thumbnails/steak.jpg" alt="Steak">
-    </div>
-
-    <div class="column2">
-    <img src="/thumbnails/steak.jpg" alt="Steak">
-    </div>
-
-    <div class="column2">
-    <img src="/thumbnails/steak.jpg" alt="Steak">
-    </div>
-
+  </div>
+  <div class=column2>
+  <img src="/thumbnails/steak.jpg" alt="Steak">
+  </div>
+  <div class=column2>
+  <img src="/thumbnails/steak.jpg" alt="Steak">
+  </div>
+  <div class=column2>
+  <img src="/thumbnails/steak.jpg" alt="Steak">
   </div>
 </div>
 
