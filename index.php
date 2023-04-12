@@ -36,6 +36,8 @@
 -->
 
 
+
+<!--
 <div class="big_box w3-main w3-content w3-padding">
   <div class = "inner_box">
     <div class="quarter">
@@ -62,6 +64,26 @@
       
     </div>
   </div>
+</div>
+-->
+
+<div class="row">
+  <div class="column2">
+      poop
+  </div>
+  
+  <div class="column2">
+      pee
+  </div>
+
+  <div class="column2">
+      ppop2
+  </div>
+
+  <div class="column2">
+      pee2
+  </div>
+
 </div>
 
 
