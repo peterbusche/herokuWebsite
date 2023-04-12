@@ -39,24 +39,27 @@
 <div class="big_box w3-main w3-content w3-padding">
   <div class = "inner_box">
     <div class="quarter">
-      alskdjfk
+    <img src="/thumbnails/steak.jpg" alt="Steak" style="width:100%">
       <h3>aslkdfjl</h3>
-      <p>asldfkjalskdfjalskdfjkasdf</p>
+      
+      
     </div>
     <div class="quarter">
-      alskdjfk
+    <img src="/thumbnails/steak.jpg" alt="Steak" style="width:100%">
       <h3>aslkdfjl</h3>
-      <p>asldfkjalskdfjalskdfjkasdf</p>
+      
+      
     </div>
     <div class="quarter">
-      alskdjfk
+    <img src="/thumbnails/steak.jpg" alt="Steak" style="width:100%">
       <h3>aslkdfjl</h3>
-      <p>asldfkjalskdfjalskdfjkasdf</p>
+      
+      
     </div>
     <div class="quarter">
-      alskdjfk
+    <img src="/thumbnails/steak.jpg" alt="Steak" style="width:100%">
       <h3>aslkdfjl</h3>
-      <p>asldfkjalskdfjalskdfjkasdf</p>
+      
     </div>
   </div>
 </div>
