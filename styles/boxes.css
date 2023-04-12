@@ -49,9 +49,11 @@
 
 
 .inner_box {
+    min-width:max-content;
     text-align:center;
-    padding: 8 8 8 8; 
-    position: absoulte;
+    padding: 8 8 8 8;
+    margin: 2 0 2 0; 
+    position: absolute;
     background-color: aqua;
     float:left;
 }
