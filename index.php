@@ -38,24 +38,17 @@
 
 <div class="big_box w3-main w3-content w3-padding">
   <div class = "inner_box">
+    <div class="quarter">
+    
       alskdjfk
-      aslkdfjl
-      asldfkj
-      asdjkfl
-      asjdlfk
+      <h3>aslkdfjl</h3>
+      <p>asldfkjalskdfjalskdfjkasdf</p>
+      
+      
+    </div>
   </div>
 </div>
 
-
-
-<!--
-<div class="">
-    <div class="quarter">
-    </div>
-  </div>  
-
-
--->
 
 
 
