@@ -67,6 +67,7 @@
 </div>
 -->
 <div class="containerGPT">
+    <div class="blankGPT"></div>
 		<div class="columnGPT">
 			<div class="boxGPT">
         <img src="/thumbnails/steak.jpg" alt="Steak">
@@ -92,6 +93,7 @@
       </div>
 			
 		</div>
+    <div class="blankGPT"></div>
 </div>
 
 
