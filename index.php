@@ -68,16 +68,22 @@
 -->
 <div class="big_box">
   <div class=column2>
-    <img src="/thumbnails/steak.jpg" alt="Steak">
+    <div class="inner_box">
+      <h3>POOP</h3>
+    </div>
+    <div class="inner_box">
+      <h3>POOP2</h3>
+    </div>   
+  </div>
+
+  <div class=column2>
+  poop
   </div>
   <div class=column2>
-  <img src="/thumbnails/steak.jpg" alt="Steak">
+  poop
   </div>
   <div class=column2>
-  <img src="/thumbnails/steak.jpg" alt="Steak">
-  </div>
-  <div class=column2>
-  <img src="/thumbnails/steak.jpg" alt="Steak">
+  poop
   </div>
 </div>
 
