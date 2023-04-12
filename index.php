@@ -36,8 +36,10 @@
 -->
 
 
-<div class="outside_column">
-  poop
+<div class="big_box">
+  <div class="column">
+    poop
+  </div>
 </div>
 
 
