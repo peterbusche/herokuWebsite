@@ -17,6 +17,8 @@
 </div>
 -->
 
+
+<!--
 <div class="first-box">
       <img class="thumbnail" src="thumbnails/download.png">
 
@@ -31,21 +33,17 @@
       </p>
     </div>
 </div>
+-->
 
 <div class="first-box">
-      <img class="thumbnail" src="thumbnails/download.png">
-
-      <p class="video-title">
-        Talking Tech and AI with Google CEO Sundar Pichai!
-      </p>
-      <p class="video-author">
-        Marques Brownlee
-      </p>
-      <p class="video-stats">
-        3.4M views &#183; 6 months ago
-      </p>
-    </div>
+  <div class="outside_box">
+    poop
+  </div>
 </div>
+
+
+
+
 
 
 

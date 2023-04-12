@@ -21,3 +21,28 @@
     border: 1px solid black;
 }
 
+
+.big_box {
+
+}
+.outside_column {
+    vertical-align: top;
+    position: realtive;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+    width: 100%;
+    background-color: green;
+}
+
+.game_title {
+
+}
+
+.game_box {
+
+}
+
+
+
+
