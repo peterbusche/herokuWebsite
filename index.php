@@ -37,7 +37,9 @@
 
 
 <div class="big_box w3-main w3-content w3-padding">
-  poop
+  <div class = "inner_box">
+    
+  </div>
 </div>
 
 
