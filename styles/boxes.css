@@ -101,6 +101,7 @@
 }
 
 .columnGPT {
+    text-align: center;
 	width: 50%;
 	height: 100%;
 	display: flex;
@@ -113,6 +114,7 @@
 	height: auto;
 	margin-bottom: 20px;
 	background-color: aqua;
+    text-align: center;
 }
 
 .blankGPT {
@@ -148,3 +150,21 @@ footer {
 	text-decoration: none;
 	font-weight: bold;
 }
+
+
+#nav > ul > li {
+    background-color: yellow;
+    display:inline;
+    margin: 15px 15px;
+  }
+
+img {
+    float:right;
+  }
+
+#footer {
+    margin-top:5px;
+    font-family: Helvetica;
+    text-align:center;
+    font-size: 9px;
+  }
