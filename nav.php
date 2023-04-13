@@ -13,7 +13,7 @@
          <h1>Peter's Playhouse</h1>
       </div>
      
-     <div id="nav" style="background-color: #333;">
+     <div id="nav" style="background-color: #f2f2f2">
          <ul>
 
             <li><a href="index.php"><button class="join-button">HOME</button></a></li>
