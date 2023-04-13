@@ -6,7 +6,7 @@
 			<ul>
 				<li><a href="about.php">About</a></li>
 				<li><a href="careers.php">Careers</a></li>
-				<li><a href="blog.php">Blog</a></li>
+				<li><a href="feedback.php">Feedback</a></li>
 				<li><a href="index.php">Home</a></li>
 			</ul>
 		</div>
