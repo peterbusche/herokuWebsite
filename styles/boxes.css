@@ -184,12 +184,14 @@ img {
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align:center;
-    font-size: 50px;
+    text-align: left;
+    font-size: 25px;
+    color:crimson;
   }
 
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:center;
     font-size: 25px;
+    color:darkgoldenrod;
 }
