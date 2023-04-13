@@ -9,7 +9,7 @@
         <h3>1</h3>
       </div>
 			<div class="boxGPT">
-        <img src="/thumbnails/download.png" alt="Steak">
+      <a href="game2.php"><button class="img-button"><img src="/thumbnails/download.png" alt="Steak"></button></a>
         <h3>2</h3>
       </div>
 			
@@ -18,11 +18,11 @@
 
 		<div class="columnGPT">
 			<div class="boxGPT">
-        <img src="/thumbnails/download.png" alt="Steak">
+      <a href="game3.php"><button class="img-button"><img src="/thumbnails/download.png" alt="Steak"></button></a>
         <h3>3</h3>
       </div>
 			<div class="boxGPT">
-        <img src="/thumbnails/download.png" alt="Steak">
+      <a href="game4.php"><button class="img-button"><img src="/thumbnails/download.png" alt="Steak"></button></a>
         <h3>4</h3>
       </div>
 			
