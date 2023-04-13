@@ -9,8 +9,9 @@
 
   </head>
   <body>
-     <h1>Peter's Playhouse</h1>
-     
+      <div id="content">         
+         <h1>Peter's Playhouse</h1>
+      </div>
      
      <div id="nav">
          <ul>
