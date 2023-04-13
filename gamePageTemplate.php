@@ -1,5 +1,10 @@
 <?php include("nav.php"); ?>
+
+
 <div id="content">
-   <h1>Multiplayer Games</h1> 
+   <h1>All Games</h1> 
 </div>
+
+
+
 <?php include("footer.php"); ?>

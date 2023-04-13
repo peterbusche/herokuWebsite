@@ -1,5 +1,5 @@
 <?php include("nav.php"); ?>
 <div id="content">
-   We are passionate about hunting and eating dinosaurs! 
+   <h1>All Games</h1> 
 </div>
 <?php include("footer.php"); ?>
