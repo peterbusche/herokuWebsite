@@ -158,10 +158,9 @@ footer {
 
 
 #nav > ul > li {
-    background-color: yellow;
     display:inline;
     margin: 15px 15px;
-  }
+}
 
 img {
     float:right;
@@ -173,7 +172,6 @@ img {
     font-family: Helvetica;
     text-align:center;
     font-size: 9px;
-    color:crimson;
 }
 
 
@@ -181,6 +179,7 @@ img {
     margin: 0px 50px;
     border: solid gray 1px;
     padding: 10px 20px;
+    color:crimson;
 }
 
 h1 {
