@@ -4,10 +4,10 @@
 <footer>
 		<div class="footer-box">
 			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="careers.php">Careers</a></li>
+				<li><a href="blog.php">Blog</a></li>
+				<li><a href="index.php">Home</a></li>
 			</ul>
 		</div>
   </footer>
@@ -15,6 +15,6 @@
 </html>
 
 
-<div id="footer">&#169; Copyright Dinosaurs are Cool&trade; LLC</div>
+<div id="footer">&#169; Copyright Peter's Playhouse&trade; LLC</div>
   </body>
 </html>
