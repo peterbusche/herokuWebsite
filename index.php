@@ -5,7 +5,7 @@
     <div class="blankGPT"></div>
 		<div class="columnGPT">
 			<div class="boxGPT">
-        <img src="/thumbnails/download.png" alt="Steak">
+        <a href="game1.php"><img src="/thumbnails/download.png" alt="Steak"></a>
         <h3>1</h3>
       </div>
 			<div class="boxGPT">
