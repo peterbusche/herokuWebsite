@@ -70,8 +70,8 @@
     <div class="blankGPT"></div>
 		<div class="columnGPT">
 			<div class="boxGPT">
-        <img src="/thumbnails/steak.jpg" alt="Steak">
         <h3>1</h3>
+        <img src="/thumbnails/steak.jpg" alt="Steak">
 
       </div>
 			<div class="boxGPT">
