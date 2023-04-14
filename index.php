@@ -1,5 +1,8 @@
-<?php require_once("nav.php"); ?>
-
+<?php require_once("nav.php"); 
+require_once 'Dao.php';
+$dao = new Dao();
+$dao->getConnection();
+?>
 
 <div class="containerGPT">
     <div class="blankGPT"></div>
