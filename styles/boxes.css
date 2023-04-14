@@ -91,7 +91,11 @@
     margin:0 8;
   }
   
-
+.big-container {
+    display:block;
+	justify-content:left;
+    background-color:lightblue;  
+}
 
 
 .containerGPT {
