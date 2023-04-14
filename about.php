@@ -1,7 +1,4 @@
 <?php include("nav.php"); ?>
-<div id="title">
-   <h2>About Us</h2> 
-</div>
 <div class="containerAbout">
    <h1>AboutUs</h1>
    <div class="sectionAbout">
