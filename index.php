@@ -4,7 +4,7 @@
 <div class="containerGPT">
     <div class="blankGPT"></div>
       <div class="columnGPT">
-        <h3>Top 10 Games</h3>
+        <h4>Top 10 Games</h4>
 
         <div class="boxGPT">
           <a href="game1.php"><button class="img-button"><img src="/thumbnails/download.png" alt="Steak"></button></a>
@@ -18,7 +18,7 @@
 
 
       <div class="columnGPT">
-        <h3>New Games</h3>
+        <h4>New Games</h4>
         <div class="boxGPT">
         <a href="game3.php"><button class="img-button"><img src="/thumbnails/download.png" alt="Steak"></button></a>
           <h3>3</h3>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="columnGPT">
-        <h3>Leaderboard</h3>
+        <h4>Leaderboard</h4>
 
         <div class="boxGPT">
           <a href="game1.php"><button class="img-button"><img src="/thumbnails/download.png" alt="Steak"></button></a>
@@ -44,9 +44,6 @@
 
     <div class="blankGPT"></div>
 </div>
-
-
-
 
 
 

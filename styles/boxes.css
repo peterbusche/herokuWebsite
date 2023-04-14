@@ -213,3 +213,12 @@ h3 {
     font-size: 25px;
     color:black;
 }
+
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px 50px;
+    border: solid gray 1px;
+    padding: 10px 20px;
+}
