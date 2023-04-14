@@ -92,7 +92,7 @@
   }
   
 .big-container {
-    display:block;
+    display:flex;
 	justify-content:left;
     background-color:lightblue;  
 }
@@ -128,7 +128,6 @@
 .blankGPT {
 	width: 160px;
 	height: 100%;
-	background-color:cornflowerblue;
 }
 
 
