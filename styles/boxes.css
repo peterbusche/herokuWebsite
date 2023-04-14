@@ -177,6 +177,13 @@ img {
     font-size: 9px;
 }
 
+#title {
+    margin: 0px 100px;
+    text-decoration: underline;
+    padding: 10px 20px;
+    color: black;
+}
+
 
 #content {
     margin: 0px 50px;
@@ -187,14 +194,22 @@ img {
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color:crimson;
+}
+
+h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
     font-size: 25px;
-    color:crimson;
+    color: black;
+    text-decoration: underline;
 }
 
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:center;
     font-size: 25px;
-    color:darkgoldenrod;
+    color:black;
 }
