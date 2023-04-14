@@ -108,7 +108,6 @@
 	flex-direction: column;
 	align-items: center;
     margin-right: 8px;
-    background-color: coral;
 }
 
 .boxGPT {
@@ -219,6 +218,6 @@ h4 {
     text-align: center;
     font-size: 25px;
     margin: 0px 50px;
-    border: solid gray 1px;
+    border: black 3px;
     padding: 10px 20px;
 }
