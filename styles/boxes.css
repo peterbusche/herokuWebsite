@@ -1,4 +1,12 @@
 
+/*set background color of each website page*/
+body {
+    background-color: #1c2331;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+
 
 .containerGPT {
 	display: flex;
@@ -25,8 +33,6 @@
 }
 
 
-
-
 .blankGPT {
 	width: 160px;
 	height: 100%;
@@ -51,15 +57,19 @@ footer {
 
 .footer-box li {
 	display: inline-block;
-	margin-right: 10px;
+	margin: 15px 15px;
 }
 
 .footer-box a {
-	color: #333;
-	text-decoration: none;
-	font-weight: bold;
+	color: rgb(6, 95, 212);
 }
 
+#footer {
+    margin-top:5px;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    font-size: 9px;
+}
 
 
 
@@ -73,13 +83,6 @@ img {
     float:right;
   }
 
-
-#footer {
-    margin-top:5px;
-    font-family: Helvetica;
-    text-align:center;
-    font-size: 9px;
-}
 
 #title {
     margin: 0px 100px;
@@ -97,14 +100,13 @@ img {
 }
 
 h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    font-family: Comic Sans MS;
     font-size: 50px;
     color:crimson;
 }
 
 h2 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Comic Sans MS;
     text-align: left;
     font-size: 25px;
     color: black;
@@ -112,7 +114,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Comic Sans MS;
     text-align:center;
     font-size: 25px;
     color:black;

@@ -4,10 +4,10 @@
 <footer>
 		<div class="footer-box">
 			<ul>
-				<li><a href="about.php">About</a></li>
-				<li><a href="careers.php">Careers</a></li>
-				<li><a href="feedback.php">Feedback</a></li>
-				<li><a href="index.php">Home</a></li>
+				<li><button class="join-button"><a href="about.php">About</a></button></li>
+				<li><button class="join-button"><a href="careers.php">Careers</a></button></li>
+				<li><button class="join-button"><a href="feedback.php">Feedback</a></button></li>
+				<li><button class="join-button"><a href="index.php">Home</a></button></li>
 			</ul>
 		</div>
   </footer>
