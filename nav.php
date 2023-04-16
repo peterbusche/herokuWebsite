@@ -2,7 +2,6 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="styles/scales.css">
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/text.css">
     <link rel="stylesheet" href="styles/boxes.css">
