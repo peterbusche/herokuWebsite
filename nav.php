@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/text.css">
     <link rel="stylesheet" href="styles/boxes.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
   </head>
   <body>
