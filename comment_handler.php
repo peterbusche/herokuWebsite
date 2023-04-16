@@ -11,6 +11,6 @@
 
   $dao = new Dao();
   $dao->saveComment($comment, $imagePath);
-  #$_SESSION['message'] = "Thanks for posting!";
-  #header("Location: comments.php");
+  $_SESSION['message'] = "Thanks for posting!";
+  header("Location: comments.php");
   exit();
