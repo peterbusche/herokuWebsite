@@ -7,7 +7,7 @@ $dao->getConnection();
 <div class="containerGPT">
     <div class="blankGPT"></div>
       <div class="columnGPT">
-        <h4>Top 10 Games</h4>
+        <h4>Top 10</h4>
 
         <div class="boxGPT">
           <a href="game1.php"><button class="img-button"><img src="/thumbnails/download.png" alt="Steak"></button></a>
