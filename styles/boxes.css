@@ -92,7 +92,7 @@ img {
     margin: 0px 50px;
     border: solid gray 1px;
     padding: 10px 20px;
-    color:crimson;
+    background-color:rgb(51, 153, 255);
 }
 
 h1 {
