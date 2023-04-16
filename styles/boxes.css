@@ -6,7 +6,6 @@ body {
 }
 
 
-
 .containerGPT {
 	display: flex;
 	justify-content: space-between;
@@ -95,11 +94,19 @@ img {
     background-color:rgb(51, 153, 255);
 }
 
+
 #content2 {
     margin: 0px 50px;
     padding: 10px 20px;
     text-decoration: underline;
 }
+
+#content3 {
+    margin: 0px 50px;
+    border: solid gray 1px;
+    padding: 10px 20px;
+}
+
 
 h1 {
     font-family: Comic Sans MS;

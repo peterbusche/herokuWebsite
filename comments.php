@@ -3,9 +3,8 @@ include("nav.php");
 require_once "Widgets.php";
 require_once 'Dao.php';
 
-
 ?>
-<div id="content3">
+<div id="content">
    <?php
    if(isset($_SESSION['message'])) {
       echo "<div class='" . $_SESSION['message_type'] . "' id='message'>" . $_SESSION['message'] . " <span class='close'>X</span></div>";
