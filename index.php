@@ -5,7 +5,7 @@ $dao = new Dao();
 $dao->getConnection();
 */
 ?>
-
+<!--
 <div class="containerGPT">
     <div class="blankGPT"></div>
       <div class="columnGPT">
@@ -49,7 +49,7 @@ $dao->getConnection();
 
     <div class="blankGPT"></div>
 </div>
-
+-->
 
 
 
