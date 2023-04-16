@@ -24,7 +24,7 @@ class Dao {
     $q->execute();
   }
 
-  public function saveComment ($comment, $imagePath = "") {
+  public function saveComment ($comment, $imagePath = " ") {
     $conn = $this->getConnection();
     $saveQuery =
         "INSERT INTO comments
