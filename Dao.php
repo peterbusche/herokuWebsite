@@ -33,29 +33,30 @@ class Dao {
     $q->execute();
   }
 
-  public function saveComment ($comment, $imagePath = "") {
-    $conn = $this->getConnection();
-    $saveQuery =
-        "INSERT INTO comments
-        (comment, image_path)
-        VALUES
-        (:comment, :image_path)";
-    $q = $conn->prepare($saveQuery);
-    $q->bindParam(":comment", $comment);
-    $q->bindParam(":image_path", $imagePath);
-    $q->execute();
-  }
+  //----------------------TEACHERS VERSION-------------------------------
+  // public function saveComment ($comment, $imagePath = "") {
+  //   $conn = $this->getConnection();
+  //   $saveQuery =
+  //       "INSERT INTO comments
+  //       (comment, image_path)
+  //       VALUES
+  //       (:comment, :image_path)";
+  //   $q = $conn->prepare($saveQuery);
+  //   $q->bindParam(":comment", $comment);
+  //   $q->bindParam(":image_path", $imagePath);
+  //   $q->execute();
+  // }
 
   //----------------KEEP----------------------
-  // public function saveComment ($comment) {
-  //   $conn = $this->getConnection();
+  public function saveComment ($comment) {
+    $conn = $this->getConnection();
 
-  //   $q = $conn->prepare("INSERT INTO comments (comment, date_entered) VALUES (:comment, :date_entered)");
-  //   $q->bindValue(':comment', $comment, PDO::PARAM_STR);
-  //   $q->bindValue(':date_entered', date('Y-m-d H:i:s'), PDO::PARAM_STR);
-  //   $q->execute();
+    $q = $conn->prepare("INSERT INTO comments (comment, date_entered) VALUES (:comment, :date_entered)");
+    $q->bindValue(':comment', $comment, PDO::PARAM_STR);
+    $q->bindValue(':date_entered', date('Y-m-d H:i:s'), PDO::PARAM_STR);
+    $q->execute();
 
-  // }
+  }
 
     //------------------DELETE---------------------
 //   public function saveComment($comment) {
