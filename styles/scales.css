@@ -54,10 +54,25 @@ table tbody tr.active-row {
   font-family: Helvetica;
 }
 
-#AllGames {
-  margin-top:5px;
-  font-family: Helvetica;
-  text-align:center;
-  font-size: 9px;
-}
+.sad {
+    background-color: red;
+  }
+  
+  .happy {
+    background-color: green;
+  }
+  
+  .close {
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+    right: -15px;
+    cursor:pointer;
+  }
+  
+  .close:hover {
+    text-decoration:underline;
+  }
+
+
 
