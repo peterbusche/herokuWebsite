@@ -10,12 +10,6 @@ class Dao {
 
   // private $dsn = "mysql:dbname=heroku_b4be0a7ca8e3823;host=us-cdbr-east-06.cleardb.net";
 
-  // try {
-  //   $dbh = new PDO($dsn, $user, $password);
-  //   echo "it worked!";
-  // } catch(PDOException $e) {
-  //   echo 'connection failed: ' . $e->getMessage();
-  // }
 
   public function getConnection () {
     return
@@ -24,13 +18,13 @@ class Dao {
   }
 
   public function deleteComment ($id) {
-    $conn = $this->getConnection();
-    $deleteComment =
-        "DELETE FROM comments
-        WHERE id = :id";
-    $q = $conn->prepare($deleteComment);
-    $q->bindParam(":id", $id);
-    $q->execute();
+      $conn = $this->getConnection();
+      $deleteComment =
+          "DELETE FROM comments
+          WHERE id = :id";
+      $q = $conn->prepare($deleteComment);
+      $q->bindParam(":id", $id);
+      $q->execute();
   }
 
   //----------------------TEACHERS VERSION-------------------------------
@@ -71,17 +65,6 @@ class Dao {
 
     return $q->execute();
   }
-
-    //------------------DELETE---------------------
-//   public function saveComment($comment) {
-//     $pdo = $this->getConnection();
-//     $stmt = $pdo->prepare("INSERT INTO comments (comment, date_entered) VALUES (:comment, :date_entered)");
-//     $stmt->bindValue(':comment', $comment, PDO::PARAM_STR);
-//     $stmt->bindValue(':date_entered', date('Y-m-d H:i:s'), PDO::PARAM_STR);
-//     $stmt->execute();
-//     return $pdo->lastInsertId();
-// }
-
 
   public function getComments () {
     $conn = $this->getConnection();

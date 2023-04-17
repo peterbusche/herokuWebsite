@@ -6,16 +6,7 @@ require_once 'Dao.php';
 ?>
 <div id="content3">
 
-   <!-- <?php
-   // if(isset($_SESSION['message'])) {
-   //    echo "<div class='" . $_SESSION['message_type'] . "' id='message'>" . $_SESSION['message'] . " <span class='close'>X</span></div>";
-   //    unset($_SESSION['message']);
-   // }
-   ?> -->
 
-
-
-   
 
 
    <form action="process_comment.php" method="POST" enctype="multipart/form-data">
