@@ -2,35 +2,34 @@
 
 class Widgets {
 
-   public static function renderTable ($rows) {
-      //get names of all the columns
-      $columnNames = array_keys($rows[0]); 
-      $html = "<table id='Comments'><thead><tr>";
-      //display column names
-      foreach ($columnNames as $name) {
-        $html .= "<th>{$name}</th>";
-      }
 
-      $html .= "</tr></thead><tbody>";
-
-      //interate through rows, by individual row
-      foreach ($rows as $row) {
-        $html .= "<tr>";
-        foreach($row as $columnName) {
-          if(!empty($columnName['image_path'])) {
-            $html .= "<td><img src="<?= $comment['image_path'] ?>" alt="comment image" width="100"></td>";
-          }
-          // if ($columnName == "image_path") { 
-          //   $html .= "<td><img src='{$item}'/></td>";
-          // } 
-          else {
-          $html .= "<td>". htmlspecialchars($columnName) . "</td>";
-          }
+  public static function renderTable($rows) {
+    // Get names of all the columns
+    $columnNames = array_keys($rows[0]);
+  
+    // Start building the HTML for the table
+    $html = "<table id='Comments'><thead><tr>";
+  
+    // Display column names
+    foreach ($columnNames as $name) {
+      $html .= "<th>{$name}</th>";
+    }
+    $html .= "</tr></thead><tbody>";
+  
+    // Iterate over the rows and add them to the table body
+    foreach ($rows as $row) {
+      $html .= "<tr>";
+      foreach ($row as $value) {
+        // If the value is a link
+        if (filter_var($value, FILTER_VALIDATE_URL)) {
+          $html .= "<td><img src='{$value}'></td>";
+        } else {
+          $html .= "<td>{$value}</td>";
         }
-        $html .= "<td><a href='delete_handler.php?id={$row['id']}'>X</a></td>" ;
-        $html .= "</tr>" ;
       }
-      $html .= "</table>";
-      return $html;
-   }
+      $html .= "</tr>";
+    }
+    $html .= "</tbody></table>";
+    return $html;
+  }
 }
