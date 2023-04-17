@@ -48,14 +48,22 @@ class Dao {
   // }
 
   //----------------KEEP----------------------
-  public function saveComment ($comment) {
+  public function saveComment ($comment, $image_path) {
     $conn = $this->getConnection();
 
-    $q = $conn->prepare("INSERT INTO comments (comment, date_entered) VALUES (:comment, :date_entered)");
-    $q->bindValue(':comment', $comment, PDO::PARAM_STR);
-    $q->bindValue(':date_entered', date('Y-m-d H:i:s'), PDO::PARAM_STR);
-    $q->execute();
+    $q = $conn->prepare("INSERT INTO comments (comment, image_path, date_entered) VALUES (:comment, :image_path, NOW())");
 
+    if (empty($comment)) {
+      throw new Exception('Comment cannot be empty');
+    }
+  
+    if (empty($image_path)) {
+      throw new Exception('Image path cannot be a NULL value.');
+    }
+    
+    $q->bindParam(':comment', $comment);
+    $q->bindParam(':image_path', $image_path);
+    return $q->execute();
   }
 
     //------------------DELETE---------------------
