@@ -8,38 +8,45 @@ class Dao {
   private $user = "bb94a3d0d4155a";
   private $pass = "8bed8fba";
 
-  public function getConnection() {
-    return
-      new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
-          $this->pass);
-  }
+  // try {
+  //   $dbh = new PDO($dsn, )
 
-  public function deleteComment ($id) {
-    $conn = $this->getConnection();
-    $deleteComment =
-        "DELETE FROM comments
-        WHERE id = :id";
-    $q = $conn->prepare($deleteComment);
-    $q->bindParam(":id", $id);
-    $q->execute();
-  }
+  // } catch(PDOException $e) {
+  //   echo 'connection failed: ' . $e->getMessage();
+  // }
 
-  public function saveComment ($comment, $imagePath = " ") {
-    $conn = $this->getConnection();
-    $saveQuery =
-        "INSERT INTO comments
-        (comment, image_path)
-        VALUES
-        (:comment, :image_path)";
-    $q = $conn->prepare($saveQuery);
-    $q->bindParam(":comment", $comment);
-    $q->bindParam(":image_path", $imagePath);
-    $q->execute();
-  }
+  // public function getConnection() {
+  //   return
+  //     new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
+  //         $this->pass);
+  // }
 
-  public function getComments () {
-    $conn = $this->getConnection();
-    return $conn->query("SELECT comment, date_entered, id FROM comments ORDER BY date_entered desc")->fetchAll(PDO::FETCH_ASSOC);
-  }
+  // public function deleteComment ($id) {
+  //   $conn = $this->getConnection();
+  //   $deleteComment =
+  //       "DELETE FROM comments
+  //       WHERE id = :id";
+  //   $q = $conn->prepare($deleteComment);
+  //   $q->bindParam(":id", $id);
+  //   $q->execute();
+  // }
+
+  // public function saveComment ($comment, $imagePath = " ") {
+  //   $conn = $this->getConnection();
+  //   $saveQuery =
+  //       "INSERT INTO comments
+  //       (comment, image_path)
+  //       VALUES
+  //       (:comment, :image_path)";
+  //   $q = $conn->prepare($saveQuery);
+  //   $q->bindParam(":comment", $comment);
+  //   $q->bindParam(":image_path", $imagePath);
+  //   $q->execute();
+  // }
+
+  // public function getComments () {
+  //   $conn = $this->getConnection();
+  //   return $conn->query("SELECT comment, date_entered, id FROM comments ORDER BY date_entered desc")->fetchAll(PDO::FETCH_ASSOC);
+  // }
 
 } // end Dao
