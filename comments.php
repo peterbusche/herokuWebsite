@@ -23,7 +23,7 @@ require_once 'Dao.php';
       <textarea name="comment" id="comment" rows="1" cols="50"></textarea>
       <br>
       <label for="image_path">Upload an Image:</label>
-      <input type="text" name="image_path" id="image_path" pattern="https?://.+">
+      <input type="file" id="myfile" name="myfile">
       <br>
       <input type="submit" value="Submit">
    </form>
