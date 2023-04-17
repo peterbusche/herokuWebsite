@@ -85,7 +85,7 @@ class Dao {
 
   public function getComments () {
     $conn = $this->getConnection();
-    return $conn->query("SELECT comment, date_entered, id FROM comments ORDER BY date_entered desc")->fetchAll(PDO::FETCH_ASSOC);
+    return $conn->query("SELECT comment, image_path, date_entered, id FROM comments ORDER BY date_entered desc")->fetchAll(PDO::FETCH_ASSOC);
   }
 
 } // end Dao

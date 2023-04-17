@@ -3,11 +3,14 @@
 class Widgets {
 
    public static function renderTable ($rows) {
+      //get names of all the columns
       $columnNames = array_keys($rows[0]); 
-      $html = "<table id='comments'><thead><tr>";
+      $html = "<table id='Comments'><thead><tr>";
+      //display column names
       foreach ($columnNames as $name) {
         $html .= "<th>{$name}</th>";
       }
+      
       $html .= "</tr></thead><tbody>";
       foreach ($rows as $row) {
         $html .= "<tr>";
