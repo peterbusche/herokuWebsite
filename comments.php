@@ -15,10 +15,15 @@ require_once 'Dao.php';
 
 
 
+   
 
-   Leave a Comment
-   <form action="process_comment.php" method="POST">
+
+   <form action="process_comment.php" method="POST" enctype="multipart/form-data">
+      <label for="comment">Leave a Comment</label>
       <textarea name="comment" id="comment" rows="1" cols="50"></textarea>
+      <br>
+      <label for="image_path">Upload an Image:</label>
+      <input type="file" name="image_path" id="image_path">
       <br>
       <input type="submit" value="Submit">
    </form>
