@@ -49,20 +49,26 @@ class Dao {
 
   //----------------KEEP----------------------
   public function saveComment ($comment, $image_path) {
-    $conn = $this->getConnection();
 
+    if (empty($comment) && empty($image_path)) {
+      return;
+    }
+
+    $conn = $this->getConnection();
     $q = $conn->prepare("INSERT INTO comments (comment, image_path, date_entered) VALUES (:comment, :image_path, NOW())");
 
-    if (empty($comment)) {
-      throw new Exception('Comment cannot be empty');
+    if (!empty($comment)) {
+        $q->bindParam(':comment', $comment);
+    } else {
+        $q->bindValue(':comment', "");
     }
   
-    if (empty($image_path)) {
-      throw new Exception('Image path cannot be a NULL value.');
+    if (!empty($image_path)) {
+      $q->bindParam(':image_path', $image_path);
+    } else {
+      $q->bindValue(':image_path', "");
     }
-    
-    $q->bindParam(':comment', $comment);
-    $q->bindParam(':image_path', $image_path);
+
     return $q->execute();
   }
 
