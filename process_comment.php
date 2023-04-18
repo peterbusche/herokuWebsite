@@ -8,7 +8,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get the comment and image path from the form
     $comment = trim($_POST['comment']);
     $image_path = trim($_POST['image_path']);
-    $dao->saveComment($comment, $image_path);
+
+    // Make sure the comment is not empty
+    if (!empty($comment) || !empty($image_path)) {
+        // Save the comment and image path to the database
+        $dao->saveComment($comment, $image_path);
+    }
 }
 
 // Redirect back to comments.php

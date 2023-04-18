@@ -44,13 +44,14 @@ class Dao {
   //----------------KEEP----------------------
   public function saveComment ($comment, $image_path) {
 
+    //if both are empty return
     if (empty($comment) && empty($image_path)) {
       return;
     }
 
     $conn = $this->getConnection();
     $q = $conn->prepare("INSERT INTO comments (comment, image_path, date_entered) VALUES (:comment, :image_path, NOW())");
-
+    //make sure comment isnt empty
     if (!empty($comment)) {
         $q->bindParam(':comment', $comment);
     }
@@ -58,7 +59,7 @@ class Dao {
     if (!empty($image_path)) {
       $q->bindParam(':image_path', $image_path);
     }
-    $q->execute();
+    return $q->execute();
   }
 
   public function getComments () {
