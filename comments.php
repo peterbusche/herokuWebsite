@@ -2,12 +2,9 @@
 include("nav.php"); 
 require_once "Widgets.php";
 require_once 'Dao.php';
-
 ?>
+
 <div id="content3">
-
-
-
 
    <form action="process_comment.php" method="POST" enctype="multipart/form-data">
       <label for="comment">Leave a Comment</label>
@@ -26,4 +23,5 @@ require_once 'Dao.php';
    ?>
 
 </div>
+
 <?php include("footer.php"); ?>
