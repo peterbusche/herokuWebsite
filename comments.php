@@ -4,10 +4,9 @@ require_once("Widgets.php");
 require_once("Dao.php");
 ?>
 
+<h1>askdjfhaksdjfh</h1>
 
-will this show up?
 
-<? include("comment_form.php");?>
 
 
 
