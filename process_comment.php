@@ -4,22 +4,40 @@ require_once("Dao.php");
 
 $dao = new Dao();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Get the comment and image path from the form
-    $comment = trim($_POST['comment']);
-    $image_path = trim($_POST['image_path']);
+if (isset($_POST['comment'])) {
+    $comment = $_POST['comment'];
+  
+    // Handle file upload
+    $target_dir = "uploads/";
+    $target_file = $target_dir . basename($_FILES["image"]["name"]);
+    move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+    $image_path = $target_file;
+  
+    // Call saveComment function with comment and image path
+    $dao->saveComment($comment, $image_path);
+  
+    // Redirect back to comments page
+    header("Location: comments.php");
+    exit();
+  }
 
-    // Make sure the comment is not empty
-    if (!empty($comment) || !empty($image_path)) {
-        // Save the comment and image path to the database
-        $dao->saveComment($comment, $image_path);
-    }
-}
+  
+// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//     // Get the comment and image path from the form
+//     $comment = trim($_POST['comment']);
+//     $image_path = trim($_POST['image_path']);
 
-// Redirect back to comments.php
-header("Location: comments.php");
-exit();
+//     // Make sure the comment is not empty
+//     if (!empty($comment) || !empty($image_path)) {
+//         // Save the comment and image path to the database
+//         $dao->saveComment($comment, $image_path);
+//     }
 
+
+// // Redirect back to comments.php
+// header("Location: comments.php");
+// exit();
+// }
 
 
 
@@ -67,4 +85,17 @@ exit();
 
 // header("Location: comments.php");
 // exit();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
