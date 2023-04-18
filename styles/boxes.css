@@ -19,6 +19,7 @@ body {
 	flex-direction: column;
 	align-items: center;
     margin-right: 8px;
+    border: solid gray 1px;
 }
 
 .boxGPT {
