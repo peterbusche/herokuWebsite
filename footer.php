@@ -8,8 +8,7 @@
 			</ul>
 		</div>
 	</footer>
-  </body>
-</html>
+
 
 
 <div id="footer">&#169; Copyright Peter's Playhouse&trade; LLC</div>
