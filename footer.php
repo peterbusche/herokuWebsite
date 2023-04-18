@@ -1,7 +1,4 @@
-
-
-
-<footer>
+	<footer>
 		<div class="footer-box">
 			<ul>
 				<li><button class="join-button"><a href="about.php">About</a></button></li>
@@ -10,7 +7,7 @@
 				<li><button class="join-button"><a href="index.php">Home</a></button></li>
 			</ul>
 		</div>
-  </footer>
+	</footer>
   </body>
 </html>
 
