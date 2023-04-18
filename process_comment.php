@@ -1,6 +1,6 @@
 <?php
 
-require_once('Dao.php');
+require_once("Dao.php");
 
 $dao = new Dao();
 
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // Redirect back to comments.php
-header('Location: comments.php');
+header("Location: comments.php");
 exit();
 
 
