@@ -26,4 +26,5 @@ class Widgets {
     }
     $html .= "</tbody></table>";
     return $html;
+  }
 }
