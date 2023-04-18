@@ -1,3 +1,6 @@
+
+
+
 <div id="content3">
    <form action="process_comment.php" method="POST" enctype="multipart/form-data">
       <label for="comment">Leave a Comment</label>

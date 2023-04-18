@@ -28,7 +28,7 @@
             <li><a href="AllGames.php"><button class="join-button">ALL GAMES</button></a></li>
             <li><a href="Multiplayer.php"><button class="join-button">MULTIPLAYER</button></a></li>
             <li><a href="SinglePlayer.php"><button class="join-button">SINGLE PLAYER</button></a></li>
-            <li><a href="info.php"><button class="join-button">RANDOM</button></a></li>     
+            <li><a href="Random.php"><button class="join-button">RANDOM</button></a></li>     
          </ul>
       </div>
 
