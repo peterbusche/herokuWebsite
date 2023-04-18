@@ -52,14 +52,10 @@ class Dao {
     $conn = $this->getConnection();
     $q = $conn->prepare("INSERT INTO comments (comment, image_path, date_entered) VALUES (:comment, :image_path, NOW())");
     //make sure comment isnt empty
-    if (!empty($comment)) {
-        $q->bindParam(':comment', $comment);
-    }
-  
-    if (!empty($image_path)) {
-      $q->bindParam(':image_path', $image_path);
-    }
-    return $q->execute();
+    
+    $q->bindParam(':comment', $comment);
+    $q->bindParam(':image_path', $image_path);
+    $q->execute();
   }
 
   public function getComments () {
