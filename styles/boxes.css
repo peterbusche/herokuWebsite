@@ -26,6 +26,7 @@ body {
 	width: 60%;
 	height: auto;
 	margin-bottom: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -145,6 +146,13 @@ h5 {
     font-family: Comic Sans MS;
     font-size: 30px;
     color:rgb(255,255,15);
+}
+
+h6 {
+    font-family: Comic Sans MS;
+    text-align:left;
+    font-size: 25px;
+    color:white;
 }
 
 
