@@ -53,17 +53,12 @@ class Dao {
 
     if (!empty($comment)) {
         $q->bindParam(':comment', $comment);
-    } else {
-        $q->bindValue(':comment', "");
     }
   
     if (!empty($image_path)) {
       $q->bindParam(':image_path', $image_path);
-    } else {
-      $q->bindValue(':image_path', "");
     }
-
-    return $q->execute();
+    $q->execute();
   }
 
   public function getComments () {
