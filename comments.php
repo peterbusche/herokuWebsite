@@ -2,7 +2,7 @@
 include("nav.php"); 
 require_once "Widgets.php";
 ?>
-
+<?php include('comment_form.php'); ?>
 <?php
 include("Dao.php");
 $dao = new Dao();
