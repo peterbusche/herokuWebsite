@@ -1,3 +1,8 @@
+<?php 
+include("nav.php"); 
+require_once "Widgets.php";
+?>
+
 <?php
 include("Dao.php");
 $dao = new Dao();
