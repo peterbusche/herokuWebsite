@@ -1,5 +1,5 @@
 
-<div id="content3">
+<div>
    <form action="comments.php" method="POST" enctype="multipart/form-data">
       <label for="comment">Leave a Comment</label>
       <textarea name="comment" id="comment" rows="1" cols="50"></textarea>
