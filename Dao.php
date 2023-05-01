@@ -1,34 +1,60 @@
 <?php
-
+// Dao.php
+// class for saving and getting comments from MySQL
 class Dao {
   private $host = "us-cdbr-east-06.cleardb.net";
   private $db = "heroku_b4be0a7ca8e3823";
   private $user = "bb94a3d0d4155a";
   private $pass = "8bed8fba";
-  private $pdo;
+  // private $dsn = "mysql:dbname=heroku_b4be0a7ca8e3823;host=us-cdbr-east-06.cleardb.net";
+  public function getConnection () {
+    return
+      new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
+          $this->pass);
+  }
+  public function deleteComment ($id) {
+      $conn = $this->getConnection();
+      $deleteComment =
+          "DELETE FROM comments
+          WHERE id = :id";
+      $q = $conn->prepare($deleteComment);
+      $q->bindParam(":id", $id);
+      $q->execute();
+  }
+  //----------------------TEACHERS VERSION-------------------------------
+  // public function saveComment ($comment, $imagePath = "") {
+  //   $conn = $this->getConnection();
+  //   $saveQuery =
+  //       "INSERT INTO comments
+  //       (comment, image_path)
+  //       VALUES
+  //       (:comment, :image_path)";
+  //   $q = $conn->prepare($saveQuery);
+  //   $q->bindParam(":comment", $comment);
+  //   $q->bindParam(":image_path", $imagePath);
+  //   $q->execute();
+  // }
+  //----------------KEEP----------------------
+  public function saveComment ($comment, $image_path) {
+    //if both are empty return
+    if (empty($comment) && empty($image_path)) {
+      return;
+    }
+    $conn = $this->getConnection();
+    $q = $conn->prepare("INSERT INTO comments (comment, image_path, date_entered) VALUES (:comment, :image_path, NOW())");
+    //make sure comment isnt empty
+    if (!empty($comment)) {
+        $q->bindParam(':comment', $comment);
+    }
 
-  function __construct() {
-    $dsn = "mysql:host=$this->host;dbname=$this->db;charset=utf8mb4";
-    $this->pdo = new PDO($dsn, $this->user, $this->pass);
-    $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    if (!empty($image_path)) {
+      $q->bindParam(':image_path', $image_path);
+    }
+    return $q->execute();
   }
 
-  function getConnection() {
-    return $this->pdo;
+  public function getComments () {
+    $conn = $this->getConnection();
+    return $conn->query("SELECT comment, image_path, date_entered, id FROM comments ORDER BY date_entered desc")->fetchAll(PDO::FETCH_ASSOC);
   }
-
-  function saveComment($comment, $image_url) {
-    $stmt = $this->pdo->prepare("INSERT INTO comments (user_id, comment, image_url) VALUES (?, ?, ?)");
-    $stmt->execute([$_SESSION['user_id'], $comment, $image_url]);
-  }
-
-  function deleteComment($id) {
-    $stmt = $this->pdo->prepare("DELETE FROM comments WHERE id = ?");
-    $stmt->execute([$id]);
-  }
-
-  function getComments() {
-    $stmt = $this->pdo->query("SELECT comments.id, comments.comment, comments.image_url, comments.created_at, users.username FROM comments JOIN users ON comments.user_id = users.id ORDER BY comments.created_at DESC");
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
-  }
-}
+} // end Dao
