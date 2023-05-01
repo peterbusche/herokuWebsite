@@ -27,40 +27,27 @@ class Dao {
       $q->execute();
   }
 
-  //----------------------TEACHERS VERSION-------------------------------
-  // public function saveComment ($comment, $imagePath = "") {
-  //   $conn = $this->getConnection();
-  //   $saveQuery =
-  //       "INSERT INTO comments
-  //       (comment, image_path)
-  //       VALUES
-  //       (:comment, :image_path)";
-  //   $q = $conn->prepare($saveQuery);
-  //   $q->bindParam(":comment", $comment);
-  //   $q->bindParam(":image_path", $imagePath);
-  //   $q->execute();
-  // }
 
   //----------------KEEP----------------------
-  public function saveComment ($comment, $image_path) {
+  public function saveComment ($comment, $image_url) {
 
     //if both are empty return
-    if (empty($comment) && empty($image_path)) {
+    if (empty($comment) && empty($image_url)) {
       return;
     }
 
     $conn = $this->getConnection();
-    $q = $conn->prepare("INSERT INTO comments (comment, image_path, date_entered) VALUES (:comment, :image_path, NOW())");
+    $q = $conn->prepare("INSERT INTO comments (comment, image_url, created_at) VALUES (:comment, :image_path, NOW())");
     //make sure comment isnt empty
     
     $q->bindParam(':comment', $comment);
-    $q->bindParam(':image_path', $image_path);
+    $q->bindParam(':image_path', $image_url);
     $q->execute();
   }
 
   public function getComments () {
     $conn = $this->getConnection();
-    return $conn->query("SELECT comment, image_path, date_entered, id FROM comments ORDER BY date_entered desc")->fetchAll(PDO::FETCH_ASSOC);
+    return $conn->query("SELECT comment, image_url, created_at, id FROM comments ORDER BY created_at desc")->fetchAll(PDO::FETCH_ASSOC);
   }
 
 } // end Dao
